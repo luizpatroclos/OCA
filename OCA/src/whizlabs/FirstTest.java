@@ -504,5 +504,77 @@ class Program54 {
 }
 
 
+class Program56 {
+	
+	   
+
+	public static void main(String[] args) {
+		
+		
+        Integer in = 10;
+        
+        System.out.print( method(in) );  //Cannot make a static reference to the non-static
+        								//method method(Object) from the type Program56
+   
+	}
+		
+	private static String method(Object c){
+		
+		 return c.toString();
+	}		
+}
+
+class Program57 {
+
+	public static void main(String[] args) {
+		
+        int []ary = {1,2,3};
+        
+        change(ary[2]);
+        
+        change(ary);
+        
+        System.out.println(ary[1]+ary[2]);
+         
+	}
+	
+    public static void change(int x){
+    	
+        x = 1;
+        
+    }
+    
+    public static void change(int x[]){
+    	
+        x[1] = 0;
+    	
+    }
+			
+}
+
+ class Program58 {
+	 
+	 static int i;
+
+	public static  void main(String[] args) {
+		
+		Program58 w1 = new Program58();
+		Program58 w2 = new Program58();
+		Program58 w3 = new Program58();
+        w1.method();
+        w2.method();
+        w3.method();
+    	  
+	}
+	
+	 public void method() {
+     	
+         while(++i < 3) {
+             System.out.print("A");
+         }
+     }
+			
+}
+
 
 
