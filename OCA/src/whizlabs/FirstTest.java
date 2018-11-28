@@ -1,7 +1,9 @@
 package whizlabs;
 
+// here we have the possibility to import a static import and use it in a static method.
+import static java.lang.System.out;
+
 import java.util.Arrays;
-import static java.lang.System.*;// here we have the possibility to import a static import and use it in a static method.
 
 public class FirstTest {
 
@@ -429,3 +431,78 @@ class Program51C {
 class B extends A {
 
 }*/
+
+
+class Program52C {
+
+	public static void main(String[] args) {
+
+        short s = 10;
+        
+        s += 10;
+        s++;
+       // s = s+1; // We have to pay close attention here. we can add up like this "s += 10;", therefore, we cannot do explicitly
+        // cz short + int = int, so, in this case you must do a cast.
+        
+        System.out.println(s);
+	}
+
+}
+
+class Program53C {
+	
+    int j = 10;
+
+	public static void main(String[] args) {
+		
+		int x = -1;
+		int i = 2;
+		
+		
+		System.out.print(x++ + --i);
+		
+		System.out.println(x);
+		System.out.println(i);
+		
+        int j;
+        
+        Character.valueOf('c');
+        
+        if(new Program53C().go(10)) j = 5;
+       // System.out.print(j);	// We have to initialize the variable in order to run well.
+		
+	}
+	
+	  boolean go(int y){
+          if(y>5) return true;
+          else return false;
+      }
+		
+
+}
+
+
+class Program54 {
+	
+   
+
+	public static void main(String[] args) {
+		
+
+		int array[ ] = {2,5,9,5,0,3};
+		
+        Arrays.sort(array,2,6);
+        
+        System.out.println(array);
+        
+        System.out.print(array[2]+array[5]);
+        
+	}
+		
+		
+
+}
+
+
+
+
